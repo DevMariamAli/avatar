@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); 
+/* اذا ابغا اجمع كل العناصر واعدل عليهم تعديل واحد استخدم (*) */
+/* اذا احتاج خط استخدم قوقل فونت واحمل منه */
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* اذا ابغا اعدل ع جميع الروابط استخدم a */
+a {
+    color: white;
+    text-decoration: none;
+}
+/* طريقة دمج لونين مع بعض باستخدام الباكقراوند امج ولاينر قريدينت 
+استخدام الارتفاع vh لملئ المحتوى بالكامل
+تو رايت انه من جهة اليمين يكون اللون اكثر
+خاصية العرض فلكس لمرونة العرض في البودي
+*/
+
+body {
+    background-image: linear-gradient(to right, #020225e7 , #000000c4 );
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ .conteaner {
+    background-image: linear-gradient(to right, #030330d8  30%, #00000052  ),
+    url(../css/avatar.jpg);
+
+    width: 90%;
+    height: 600px;
+    background-size: 200vh ;
+    background-position: center;
+ }
+ /* للمرور على العناصر في الكونتينر  */
+ .conteaner:hover {
+    background-image: linear-gradient(to right, #020225be  30%, transparent),
+    url(../css/avatar.jpg)
+
+ }
+  /* مسافه بين العناصر */
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+ }
+ .logo {
+    text-transform: uppercase;
+    font-size: 30px;
+   
+ }
+/*
+ اللستة بدون خط  
+ يكون للعناصر مساحة متساوية حوله 
+ */
+ ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+ }
+ ul a {
+    border-bottom: 2px solid transparent;
+ }
+ ul a:hover {
+    border-bottom-color: white;
+ }
+ 
+ .content {
+    color: white;
+    width: 50%;
+    padding: 30px;
+    margin-top: 50px ;
+ }
+ .content h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+ }
+ /*
+  حروف متباعدة
+  */
+ .content p {
+    letter-spacing: 3px;
+    width: 300px;
+    padding: 20px 0;
+ }
+
+
+ .content button {
+    border-radius: 8px;
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid transparent;
+
+ }
+
+/* ترانسبرنت الشفافية تبع الزر */
+
+ .content button:hover {
+    background-color: transparent ;
+    color: white;
+    border-color: white ;
+ }
+
+
